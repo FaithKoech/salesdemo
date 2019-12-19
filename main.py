@@ -1,5 +1,3 @@
-from _ast import In
-from idlelib.idle_test.test_iomenu import S
 
 from flask import Flask, render_template, request, redirect, url_for, flash
 
