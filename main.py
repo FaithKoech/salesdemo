@@ -6,10 +6,10 @@ import pygal
 import psycopg2
 
 from flask_sqlalchemy import SQLAlchemy
-from Config.Config import Development
+from Config.Config import Development, Production
 
 app = Flask(__name__)
-app.config.from_object(Development)
+app.config.from_object(Production)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Ann@2020@127.0.0.1:5432/salesdemo'
 app.config['SECRET_KEY'] = 'KenyaYetuMoja'
 app.config['DEBUG'] = True
