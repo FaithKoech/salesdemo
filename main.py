@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template, request, redirect, url_for, flash
-
+#render_template() function converts a template into a complete HTML page
 import pygal
 
 import psycopg2
